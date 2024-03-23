@@ -103,7 +103,9 @@ C:\> gradlew bootRun --args='--consumer'
 Rerun the producer to see more events, or feel free to modify the code as necessary to create more or different events.
 Once you are done with the consumer, enter Ctrl-C to terminate the consumer application.
 
-Shut down Kafka when you are done with it from WSL terminal:
+To stop the Kafka docker container click stop button on Docker Desktop 
+You can also shut down Kafka from WSL terminal but this will remove the container and topic
+so you will need to create new one next time:
 segovelo@LAPTOP-T0H2E05J:~$ confluent local kafka stop
 
 Next time you want to run Kafka you can start it from Docker Desktop, no need to create topic "purchases" again 
