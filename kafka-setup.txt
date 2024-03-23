@@ -1,0 +1,68 @@
+
+Complex Event Processing - Kafka - Confluent 
+https://developer.confluent.io/get-started/spring-boot/#introduction
+
+Installing Homebrew in Windows
+https://blog.devops.dev/how-to-install-homebrew-on-windows-61fe1c2b173
+
+==> Updating Homebrew...       
+==> Downloading https://ghcr.io/v2/homebrew/portable-ruby/portable-ruby/blobs/sha256:f7be167f7ac4f296b9f4c5874ceeea4aafd9999c3c7f2b0378cae7dd273e2322
+######################################################################## 100.0%
+==> Pouring portable-ruby-3.1.4.x86_64_linux.bottle.tar.gz
+Warning: /home/linuxbrew/.linuxbrew/bin is not in your PATH.
+Instructions on how to configure your shell for Homebrew
+can be found in the 'Next steps' section below.
+==> Installation successful!
+==> Homebrew has enabled anonymous aggregate formulae and cask analytics.
+Read the analytics documentation (and how to opt-out) here:
+ https://docs.brew.sh/Analytics
+No analytics data has been sent yet (nor will any be during this install run).
+==> Homebrew is run entirely by unpaid volunteers. Please consider donating:
+https://github.com/Homebrew/brew#donations
+==> Next steps:
+- Run these two commands in your terminal to add Homebrew to your PATH:
+(echo; echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"') >> /home/segovelo/.bashrc
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+- Install Homebrew's dependencies if you have sudo access:
+sudo apt-get install build-essential
+For more information, see:
+https://docs.brew.sh/Homebrew-on-Linux
+- We recommend that you install GCC:
+brew install gcc
+- Run brew help to get started
+- Further documentation:
+ https://docs.brew.sh
+                                                                                                                
+segovelo@LAPTOP-T0H2E05J:/mnt/c/WINDOWS/system32$      
+
+
+(echo; echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"') >> /home/segovelo/.bashrc
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+
+- Install Homebrew's dependencies if you have sudo access:
+    sudo apt-get install build-essential
+  For more information, see:
+    https://docs.brew.sh/Homebrew-on-Linux
+- We recommend that you install GCC:
+    brew install gcc
+-
+
+brew install llvm
+clang --version
+
+brew install confluentinc/tap/cli
+confluent --version                                                     
+confluent version v3.54.0 
+
+confluent local kafka start
+
+Digest: sha256:ad62269bf4766820c298f7581cf872a49f46a11dbaebcccb4fd2e71049288c5b
+Status: Downloaded newer image for confluentinc/confluent-local:7.6.0
++-----------------+-------+
+| Kafka REST Port | 8082  |
+| Plaintext Ports | 35177 |
++-----------------+-------+
+Started Confluent Local containers "f1676b1b24".
+To continue your Confluent Local experience, run `confluent local kafka topic create <topic>` and `confluent local kafka topic produce <topic>`.
