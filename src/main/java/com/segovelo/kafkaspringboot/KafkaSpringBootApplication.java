@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class KafkaSpringBootApplication {
 
-    private  Producer producer;
+    private final Producer producer;
 
     public static void main(String[] args) {
         SpringApplication application = new SpringApplication(KafkaSpringBootApplication.class);
@@ -27,7 +27,7 @@ public class KafkaSpringBootApplication {
             for (String arg : args) {
                 switch (arg) {
                   case "--producer": 
-                        this.producer.sendMessage("awalther", "t-shirts");
+                        this.producer.sendMessage("segovelo", "HP Monitor");
                         this.producer.sendMessage("htanaka", "t-shirts");
                         this.producer.sendMessage("htanaka", "batteries");
                         this.producer.sendMessage("eabara", "t-shirts");
@@ -36,7 +36,7 @@ public class KafkaSpringBootApplication {
                         this.producer.sendMessage("awalther", "t-shirts");
                         this.producer.sendMessage("jsmith", "batteries");
                         this.producer.sendMessage("jsmith", "gift card");
-                        this.producer.sendMessage("eabara", "t-shirts");
+                        this.producer.sendMessage("eabara", "t-shirts"); 
                         break;
                   case "--consumer": 
                         MessageListenerContainer listenerContainer = kafkaListenerEndpointRegistry.getListenerContainer("myConsumer");
