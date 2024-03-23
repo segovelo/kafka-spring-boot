@@ -136,3 +136,6 @@ Status: Downloaded newer image for confluentinc/confluent-local:7.6.0
 +-----------------+-------+
 Started Confluent Local containers "f1676b1b24".
 To continue your Confluent Local experience, run `confluent local kafka topic create <topic>` and `confluent local kafka topic produce <topic>`.
+
+Create a new topic, purchases, which you will use to produce and consume events.
+confluent local kafka topic create purchases
